@@ -1,0 +1,13 @@
+<?xml version = "1.0" standalone = "yes"?>
+<TimelineLine_Prefs STK_version = "11.3.0">
+    <Views Type = "Content">
+        <ContentView Name = "Scenario Availability">
+            <Row ClassName = "Scenario" ComponentName = "AvailabilityIntervals" DisplayName = "Propagator_Test AvailabilityIntervals" IsDefaultName = "True" IsExpanded = "False" IsGroup = "False" IsHidden = "False" Path = "/Application/STK/Scenario/Propagator_Test" Type = "IntervalList">
+                <Interval Name = "Propagator_Test AvailabilityIntervals" StartTime = "24 May 2019 03:05:44.890" StopTime = "13 Jun 2019 04:00:00.000" />
+            </Row>
+        </ContentView>
+    </Views>
+    <Views Type = "Time">
+        <TimeView FullViewRulerStartTime = "0.000000" FullViewRulerStopTime = "0.000000" GlobalIntervalComp = "AnalysisInterval" GlobalIntervalCompPath = "/Application/STK/Scenario/Propagator_Test" GlobalStartOffset = "0.000000" GlobalStartTime = "24 May 2019 03:05:44.890" GlobalStopOffset = "0.000000" GlobalStopTime = "13 Jun 2019 04:00:00.000" MaxFullViewTime = "0.000000" MinFullViewTime = "0.000000" Name = "Scenario Analysis Period" ViewportStartTime = "0.000000" ViewportStopTime = "0.000000" />
+    </Views>
+</TimelineLine_Prefs>

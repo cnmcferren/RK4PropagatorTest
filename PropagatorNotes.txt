@@ -1,0 +1,25 @@
+Two-Body (Low-fidelity):
+	Two-Body propagator gives an exact solution to a point mass around a central body but does not account for a varying force field 
+around the satellite.
+
+J2Perturbation and J4Perturbation (Low-fidelity):
+	These two propagators account for the two-body calculation and asymmetry in the Earth's gravitational field. J4 is more accurate
+than the J2. But neither account for atmospheric drag, solar radiation pressure, or third body gravity.
+
+SGP4 (Low-Fidelity for LEO. Medium-fidelity for others):
+	Uses TLE files.  It considers secular and periodic variations due to Earth oblateness, solar and lunar gravitational effects,
+gravitational resonance effects, and orbital decay using a drag model.
+
+HPOP (High-fidelity):
+	Uses numerical integration of the differential equations. Can model full gravitational field, third-body gravity, atmospheric
+drag, and solar radiation pressure. Can give a very precise orbit but I would assume it is expensive.
+
+TEST:
+
+***DESCRIPTION****
+Three satellites were placed in a scenario using data from 43466. Beginning on January 1, 2019, three satellites (using HPOP, Two-Body, and J4Perturbation) were propagated until May 31, 2019.
+
+***RESULTS***
+	Two-Body spent most of its time a great distance from HPOP and J4. Its orbit was a half cycle off of the other two for a majority of the time in orbit. Due to the lack of J4 and Two-body to model
+atmospheric drag, the orbits remained the same altitudes of each other. The most interesting finding was the HPOP model. Expected to be the most accurate model, it failed, modeling the satellite
+crashing into Earth very early in the simulation. This is obviously not true because the satellite was still in orbit at the time of the test (May 31, 2019). 
